@@ -43,7 +43,7 @@ Time complexity:
 
 Space complexity: 
 
-O(n) where n is total number of nodes in the trie. Not very insightful! But in order to say more we have to know statistical properties of the input corpus. Basically, we expect the trie space to grow linearly with number of input words at the start, but then slow down as each new word is more likely to overlap with nodes that are already in the tree.
+O(n) where n is total number of nodes in the trie. In order to say more, I think we have to know statistical properties of the input. Basically, we expect the trie space to grow linearly with number of input words at the start, but then slow down as each new word is more likely to overlap with nodes that are already in the tree.
 
 ### Problem 6: Unsorted Integer Array
 
