@@ -65,7 +65,7 @@ The solution does a linear scan, keeping track of the minimum and maximum of eve
 
 ### Problem 7: Request Routing
 
-The architecture is the same as Problem 5, except with each node representing a path segment ("part") instead of a character. 
+The architecture is the same as Problem 5, except with each node representing a path segment ("part") instead of a character. In this case we do not have any equivalent to `find_words`. We do not have to be concerned with prefix matching because we are only returning exact matches. We do not have to traverse the entire trie for solution sets. 
 
 **Time complexity:** 
 
