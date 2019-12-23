@@ -58,7 +58,7 @@ for word in wordList:
     MyTrie.insert(word)
 
 
-print(MyTrie.match(""))
+print(MyTrie.match("")) # Empty prefix - should return everything
 print(MyTrie.match("ant"))
 print(MyTrie.match("anth"))
 print(MyTrie.match("f"))
@@ -66,17 +66,4 @@ print(MyTrie.match("fu"))
 print(MyTrie.match("func"))
 print(MyTrie.match("tri"))
 print(MyTrie.match("trig"))
-
-# from IPython.display import display
-# from ipywidgets import widgets
-# from ipywidgets import interact
-# def f(prefix):
-#     if prefix != '':
-#         prefixNode = MyTrie.find(prefix)
-#         if prefixNode:
-#             print('\n'.join(prefixNode.suffixes()))
-#         else:
-#             print(prefix + " not found")
-#     else:
-#         print('')
-# interact(f,prefix='');
+print(MyTrie.match("b")) # Doesn't exist - should return empty list
