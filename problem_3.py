@@ -40,7 +40,7 @@ def rearrange_digits(input_list):
     Returns:
        (int),(int): Two maximum sums
     """
-    if len(input_list) < 2:
+    if input_list is None or len(input_list) < 2:
         return [-1]
 
     sorted_list = mergesort(input_list)
@@ -65,6 +65,8 @@ def test_function(test_case):
         print("Fail")
 
 
+test_function([None, [-1]])
+test_function([[], [-1]])
 test_function([[0], [-1]])
 test_function([[0, 0], [0, 0]])
 test_function([[9, 8], [9, 8]])
